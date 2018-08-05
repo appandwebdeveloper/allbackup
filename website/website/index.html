@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+         <div class="container">  
+             <form id="contact" method="get">
+    <h3>Contact</h3>
+    <h4>Contact us today, and get reply with in 24 hours!</h4>
+    <fieldset>
+      <input placeholder="Your name" type="text" name="name"  id="name" tabindex="1" autofocus>
+      
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="text" name="email" id="mail" tabindex="2">
+     
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number" type="text" name="phone" id="num"  tabindex="3">
+     
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Web Site starts with http://" type="text" name="url"  tabindex="4" >
+   
+    </fieldset>
+    <fieldset>
+      <textarea  name="message" tabindex="5">
+      </textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" onclick="call();">Submit</button>
+    </fieldset>
+   
+  </form>
+</div>
+        <hr>
+        <div>
+        <p id="name1"> name</p>
+            <p id="mail1"> email</p>
+            <p id="num1"> number</p>
+        
+        </div>
+        <script>
+        function call(){
+            //var name=document.getElementById("name");
+           // var mail=document.getElementById("mail");
+            //var num=document.getElementById("num");
+//var n=name.value;
+            document.getElementById("name1").innerHTML=document.getElementById("name").value;
+            
+        }
+        </script>
+        </body>
+    
+    </html>
